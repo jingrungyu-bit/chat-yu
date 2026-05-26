@@ -34,6 +34,8 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: webui
+        env:
+          VITE_WS_ENDPOINT: wss://ecleevh82h.execute-api.us-west-2.amazonaws.com/prod
 
       - uses: actions/configure-pages@v5
 
